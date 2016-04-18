@@ -1,50 +1,33 @@
 $(document).ready(function() {
-	$('h2').hover(showSectionOne);
+	
+	$('.hamburger').click(showHiddenList);
+		function showHiddenList() {
+			$(".hidden-list").css('display','block');
+		}
+	
+
+$('#registrationForm').submit(processForm);
+	function processForm(event) {
+		event.preventDefault();
+
 		
-		function showSectionOne() {
-			$("#first-dropdown").slideDown();
-			$('h2').addClass('.underline');
+		var emailAddress = $('input[name="emailAddress"]').val();
+		
 
-		}
-	$('h3').hover(showSectionTwo);
+		if (emailAddress.indexOf('@') === -1) {
+			$('#errorMessage')
+				.html('يرجى تقديم عنوان بريد إلكتروني صالح')
+				.removeClass('hide');
 
-		function showSectionTwo() {
-			$("#second-dropdown").slideDown();
-			$('h3').addClass('.underline');
-
-		}
-
-	$('h4').hover(showSectionThree);
-
-		function showSectionThree() {
-			$("#third-dropdown").slideDown();
-			$('h4').addClass('.underline');
-		}
-
-
-	$('#image-one').hover(showStoryOne);
-		function showStoryOne() {
-			$('#image-one').removeClass("grayed-out");
-			$('#quote-one').css('color','black');
+		} else if (phone-number === '') {
+			$('#errorMessage')
+				.html('الرجاء تقديم رقم هاتف صالح')
+				.removeClass('hide');
 
 
 		}
 
-	$('#image-two').hover(showStoryTwo);
-		function showStoryTwo() {
-			$('#image-two').removeClass("grayed-out");
-			$('#quote-two').css('color','black');
-
-
-		}
-
-	$('#image-three').hover(showStoryThree);
-		function showStoryThree() {
-			$('#image-three').removeClass("grayed-out");
-			$('#quote-three').css('color','black');
-
-
-		}
+	}
 
 	});
 

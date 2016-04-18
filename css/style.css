@@ -1,4 +1,7 @@
 
+  @import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+  /*font-family: 'Droid Arabic Naskh', serif;*/
+
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
@@ -43,52 +46,94 @@
 
 
 body {
-  font-family: arial;
+  font-family: 'Droid Arabic Naskh', serif; 
   overflow: auto;
 }
 
 header {
-  background: url(../images/comm_health_center.jpg) center center no-repeat;
+  background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/comm_health_center.jpg) center center no-repeat;
   /*multiple backgrounds - rgba*/
 	background-size: cover;
  
 }
 
+#story-one {
+   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1)), url(../images/Woman.JPG) center center no-repeat;
+  /*multiple backgrounds - rgba*/
+  background-size: cover;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#filler-one {
+  height: 20px;
+}
+
+#story-two {
+   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1)), url(../images/motherdaughter.jpg) center center no-repeat;
+  /*multiple backgrounds - rgba*/
+  background-size: cover;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#story-three {
+   background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url(../images/Nursetwo.jpg);
+  /*multiple backgrounds - rgba*/
+  background-size: cover;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 main {
-  background: #ffffff;
+  background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1)), url(../images/stethescope.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 h1 {
   font-size: 120px;
-  color: #ffff66;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  color: #A72546;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 
 #navigation {
   color: black;
   text-align: center;
-  background-color: #660066;
+  background-color: #6B718C;
 
 }
 
 .info-section {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   overflow: auto;
 }
 
-.main-header {
-  font-size: 40px;
-  text-align: center;
-}
 
 .main-information {
   font-size: 25px;
-  display: none;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+a {
+  color: white;
+  font-weight: 1px;
+}
+
+a:hover {
+  color: #A72546;
+}
 
 ul {
   list-style-type: none;
@@ -97,11 +142,11 @@ ul {
 }
 
 li {
-  font-size: 30px;
-  color: white;
-  font-weight: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
 }
 
@@ -114,16 +159,15 @@ li {
   font-size: 25px;
   font-family: helvetica;
   color: white;
-  background-color: #660066;
   font-weight: 5px;
 
 }
 
+.vignette {
+  background-color: white;
+}
 
-img {
-  float: right;
-  height: 300px;
-  }
+
   
   .grayed-out {
   opacity: 0.4;
@@ -137,51 +181,216 @@ section {
 }
 
 .main-header {
-  color: #660066;
-  font-weight: 80;
+  color: #A72546;
+  font-weight: 80px;
+  font-size: 35px;
+  padding-right: 30px;
+
 }
 
 footer {
-  background-color: #660066;
+  background-color: #EBEDF2;
   text-align: center;
   margin: auto;
-  border: 5px solid #ffff66;
+
+  
 }
 
-#email {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	text-align: center;
+.email p {
+  font-size: 15px;
+  padding-top: 15px;
+  font-family: arial;
+  color: #A72546;
 
 }
 
-#call {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	text-align: center;
-}
-
-#twitter {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	text-align: center;
-}
-
-#social-media {
-  height: 50px;
-  width: 50px;
+.phone-number p {
+  font-size: 20px;
+  color: #A72546;
+  padding-bottom: 5px;
 }
 
 .underline {
 text-decoration: underline;
 }
 
+.preference-box {
+  text-align: center;
+}
 
 
 .style-one {
     border: 0;
     height: 1px;
     background: #660066;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    background-color linear-gradient(to right, #ccc, #333, #ccc);
 
+
+}
+
+#quote {
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+input[type="submit"] {
+  font-size: 20px;
+  text-align: center;
+  background-color: #A72546;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #A72546;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: white;
+}
+
+.button-box {
+  padding-bottom: 15px;
+  text-align: center;
+
+}
+
+#story-three #quote {
+  color: black;
+}
+
+label {
+  font-size: 20px;
+  padding: top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.preference {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+input {
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+#errorMessage {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #A72546;
+}
+
+.reg-line {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.email-line {
+padding: top: 15px;
+
+}
+
+.registration .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#social-media {
+  height: 20px;
+  text-align: center;
+}
+
+.hidden-hamburger {
+  display: none;
+}
+
+.hidden-list {
+  display: none;
+  text-align: right;
+}
+
+.hidden-list li {
+  font-size: 10px;
+}
+
+/*media*/
+
+@media screen and (max-width: 768px) and (min-width: 400px) {
+
+  .displayed-list li{
+    display: none;
+  }
+
+  .hidden-hamburger {
+    display: block;
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  .info-section {
+    width: 100%;
+    padding: right: 30px;
+    padding-left: 30px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .info-section p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .main-header {
+    font-size: 15px;
+  }
+
+  .main-information {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+#quote {
+  font-size: 15px;
+  width: 100%;
+}
+
+#story-one {
+  width: 100%;
+}
+
+.button-box {
+  text-align: right;
+}
+
+.preference-box {
+  text-align: right;
+}
+
+.preference {
+  text-align: right;
+}
+
+
+}
 

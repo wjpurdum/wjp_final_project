@@ -10,7 +10,6 @@
 	   	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 		</head>
 		<div class='container'>
-			<body>
 				<header class="row">
 					<div class="col-md-10">
 					</div>
@@ -44,29 +43,57 @@
 					</ul>
 				
 				</div>
-	
-				<main>
+
+		<section class="registration">
+			
+
+
+			<div id="errorMessage" class="error hide"></div>
+			<form id="registrationForm">
+				<div class="button-box">
+				<input type="submit" value="طلب معلومات">
+				</div>
+				
+				<div class='row'>
+					<div class="col-md-6">
 					
-						<div class="info-section">
-							<h4 class='main-header'>من نحن</h4>
-								<p class='main-information'>صحتنا هي عبارة عن منظمة صحية تضم متخصصين في الرعاية الصحية ومدراء شؤون صحية وإداريين وممرضات يمتلكون خبرة  في مجال الرعاية الصحية ويقدمون لكم المساعدة  في حال مواجهة أي تحديات قد تمرون بها خلال التقديم  البرنامج</p>
-						</div>
+					<input type="text" name="first-name" placeholder="اسم الاول">
+					</div>
 
+					<div class="col-md-6">
 
-					
-					
-						<div class="info-section">
-							<h3 class='main-header'>مازا نفعل</h3>
-								<p class='main-information'>نحن نقدم مجموعة متنوعة من المعلومات التي تساعدك على فهم حقوقك وكيفية الحصول على الرعاية الصحية. بما في ذلك المزيا والفوائد المقدمة من قبل الحكومة الفيديرالية والحكومات المحلية (حكومة الولاية). وأيضاً المعلومات الخاصة بسوق التأمين الطبي في التابع للقطاع الخاص. </p>
-						</div>
+				
+				<input type="text" name="last name" placeholder="اسم العائلة">
+					</div>
+					<div class="col-md-6">
+				</div>
+				</div>
 
-						<div class="info-section">
-							<h2 class='main-header'>من هم عملائنا</h2>
-								<p class='main-information'>نحن نقدم خدماتنا لكافة اللاجئين والمهاجرين من المجتمعات العربية </p>
-						</div>
+				<div class='row'>
+				<div class="col-md-6">
+				<input type="email" name="emailAddress" placeholder="البريد الإلكتروني">
+				</div>
+				<div class="col-md-6">
+					<input type="number" name="phone-number" placeholder ="الهاتف">
+				</div>
+			</div>
 
-				</main>
+			<p class="preference">وسيلة التواصل التي تفضلها</p>
+				<div class="preference-box">
+				<label>
+					عبر الهاتف
+					<input type="radio" name="contact-preference" value="phone">
+				</label>
+				<label>
+					 عبر البريد الالكتروني
+				<input type="radio" name="contact-preference" value="email">
+				</label>
+				</div>
 
+			</div>
+		</form>
+
+		</section>
 					<footer>
 				
 						<div class="email">
@@ -82,10 +109,9 @@
 
 					</footer>
 		</div>
+	</div>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/index.js"></script>
-	
-</body>
 	
 </html>
