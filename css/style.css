@@ -325,6 +325,10 @@ padding: top: 15px;
   font-size: 10px;
 }
 
+.submit-button {
+  text-align: center;
+}
+
 /*media*/
 
 @media screen and (max-width: 768px) and (min-width: 400px) {
