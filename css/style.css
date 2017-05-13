@@ -38,8 +38,9 @@
 /*******************************************/ 
 
 .container {
-  max-width: 1900px;
-  margin: 0 auto;
+/*  max-width: 1000px;*/
+  margin: 0;
+  width: 100%;
   
 }
 
@@ -93,6 +94,7 @@ header {
 main {
   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1)), url(../images/stethescope.jpg) center center no-repeat;
   background-size: cover;
+  margin: 0px;
 }
 
 h1 {
